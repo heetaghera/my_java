@@ -1,9 +1,9 @@
 public class array {
 
-    public static void update(int marks[], int changable) {
+    public static void update(int[] marks, int changable) {
         System.out.println("after change");
         changable= 10;
-
+        System.out.println("how are you");
         System.out.println("after change");
         for(int i=0;i<marks.length;i++){
             marks[i]=marks[i]+1;
@@ -12,9 +12,9 @@ public class array {
 
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
-        int marks[]=new int[5];
+        int[] marks =new int[5];
             marks[0] =0;
             marks[1] =1;
             marks[2] =2;
