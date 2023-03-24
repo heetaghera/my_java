@@ -7,17 +7,22 @@ public class spiral_matrix {
         while(StartRow<=EndRow && StartCol<=EndCol){
 
             for(int j=StartCol;j<=EndCol;j++){
-                System.out.println(arr[StartRow][j]);
+                System.out.print(arr[StartRow][j]+" ");
             }
             for(int i=StartRow+1;i<=EndRow;i++){
-                System.out.println(arr[EndCol][i]);
+                System.out.print(arr[i][EndCol]+" ");
             }
-            for(int j=EndCol-1;j<=StartCol;j--){
-                System.out.println(arr[EndRow][j]);
+            for(int j=EndCol-1;j>=StartCol;j--){
+                System.out.print(arr[EndRow][j]+" ");
             }
-            for(int i=EndRow-1;i<=StartRow+1;i++){
-                System.out.println(arr[i][StartCol]);
+            for(int i=EndRow-1;i>=StartRow+1;i--){
+                System.out.print(arr[i][StartCol]+" ");
             }
+
+            StartRow++;
+            EndRow--;
+            StartCol++;
+            EndCol--;
         }
         System.out.println();
     }
