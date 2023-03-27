@@ -1,4 +1,4 @@
-public class string_compare {
+public class string_operations {
 //    code for compare strings
     public static void compare(){
         String s1="heet";
@@ -53,6 +53,7 @@ public class string_compare {
     public static void main(String[]args){
         String path="WNEENESENNN";
         System.out.println(path(path));
+        System.out.println(path.substring(0,5));
         compare();
     }
 }
